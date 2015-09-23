@@ -14,10 +14,12 @@ module.exports = {
     type: {
       context: '@type',
       description: 'The type of agent.',
-      oneOf: [{
+      not: [{
         type: 'array',
         items: {
-          $ref: 'AgentType'
+          not: {
+            $ref: 'AgentType'
+          }
         }
       }, {
         $ref: 'AgentType'
