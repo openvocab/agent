@@ -1,18 +1,14 @@
 {
     "@context": {
         "vf": "https://w3id.org/valueflows/",
-        "schema": "http://schema.org/",
-        "as": "http://www.w3.org/ns/activitystreams#",
-        "foaf": "http://xmlns.com/foaf/0.1/",
         "owl": "http://www.w3.org/2002/07/owl#",
         "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
         "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
         "rdfs:label": {
             "@container": "@language"
         },
-        "Agent": "foaf:Agent",
-        "Group": "foaf:Group",
-        "Person": "foaf:Person",
+        "Group": "vf:Group",
+        "Person": "vf:Person",
         "Relationship": "vf:Relationship",
         "context": "vf:context",
         "displayName": "vf:displayName",
