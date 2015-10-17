@@ -2,6 +2,7 @@
   "@context": [
     "https://rawgit.com/valueflows/valueflows/master/context.jsonld",
     {
+      "AgentType": "vf:AgentType",
       "Agent": "vf:Agent",
       "Person": "vf:Person",
       "Group": "vf:Group"
@@ -9,15 +10,22 @@
   ],
   "@graph": [
     {
+      "@id": "AgentType",
+      "@type": "owl:Class",
+      "rdfs:label": {
+        "en": "Agent Type"
+      }
+    },
+    {
         "@id": "Agent",
-        "@type": "owl:Class",
+        "@type": "AgentType",
         "rdfs:label": {
             "en": "Agent"
         }
     },
     {
         "@id": "Person",
-        "@type": "owl:Class",
+        "@type": "AgentType",
         "rdfs:label": {
             "en": "Person"
         },
@@ -27,7 +35,7 @@
     },
     {
         "@id": "Group",
-        "@type": "owl:Class",
+        "@type": "AgentType",
         "rdfs:label": {
             "en": "Group"
         },
